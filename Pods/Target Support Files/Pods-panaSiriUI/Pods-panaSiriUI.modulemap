@@ -1,0 +1,6 @@
+framework module Pods_panaSiriUI {
+  umbrella header "Pods-panaSiriUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA8760B131E3391F1F6B49D /* Pods_panaSiri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA0C4AD3DFB890B3506D0FD /* Pods_panaSiri.framework */; };
+		43C2784C9F990F7F1E78663F /* Pods_panaSiriChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C980A197462AE9B41A16C87 /* Pods_panaSiriChat.framework */; };
+		571C671AC08D0CF4465BBD33 /* Pods_panaSiriUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DED6AD6F2EE3EB4744CB17 /* Pods_panaSiriUI.framework */; };
+		F271E2A61F1E2FDD00E1F8A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271E2A51F1E2FDD00E1F8A2 /* AppDelegate.swift */; };
+		F271E2AB1F1E2FDE00E1F8A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271E2A91F1E2FDE00E1F8A2 /* Main.storyboard */; };
+		F271E2AD1F1E2FDE00E1F8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F271E2AC1F1E2FDE00E1F8A2 /* Assets.xcassets */; };
+		F271E2B01F1E2FDE00E1F8A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271E2AE1F1E2FDE00E1F8A2 /* LaunchScreen.storyboard */; };
+		F271E2BF1F1E310B00E1F8A2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271E2BE1F1E310B00E1F8A2 /* IntentHandler.swift */; };
+		F271E2C81F1E310C00E1F8A2 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F271E2C71F1E310C00E1F8A2 /* IntentsUI.framework */; };
+		F271E2CB1F1E310C00E1F8A2 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271E2CA1F1E310C00E1F8A2 /* IntentViewController.swift */; };
+		F271E2CE1F1E310C00E1F8A2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F271E2CC1F1E310C00E1F8A2 /* MainInterface.storyboard */; };
+		F271E2D21F1E310C00E1F8A2 /* panaSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F271E2C51F1E310C00E1F8A2 /* panaSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F271E2D51F1E310C00E1F8A2 /* panaSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F271E2BC1F1E310B00E1F8A2 /* panaSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F271E2DE1F1E33AC00E1F8A2 /* panaSiriChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F271E2DD1F1E33AC00E1F8A2 /* panaSiriChatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F271E2D01F1E310C00E1F8A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F271E29A1F1E2FDC00E1F8A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F271E2C41F1E310C00E1F8A2;
+			remoteInfo = panaSiriUI;
+		};
+		F271E2D31F1E310C00E1F8A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F271E29A1F1E2FDC00E1F8A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F271E2BB1F1E310B00E1F8A2;
+			remoteInfo = panaSiri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F271E2DC1F1E310C00E1F8A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F271E2D21F1E310C00E1F8A2 /* panaSiriUI.appex in Embed App Extensions */,
+				F271E2D51F1E310C00E1F8A2 /* panaSiri.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C980A197462AE9B41A16C87 /* Pods_panaSiriChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_panaSiriChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FE3A80DE97DFDB893C09B78 /* Pods-panaSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiri/Pods-panaSiri.debug.xcconfig"; sourceTree = "<group>"; };
+		31278E0188388B1725881C6D /* Pods-panaSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiri.release.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiri/Pods-panaSiri.release.xcconfig"; sourceTree = "<group>"; };
+		3F8A1E18E2850F07C636AD37 /* Pods-panaSiriChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiriChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat.release.xcconfig"; sourceTree = "<group>"; };
+		61DED6AD6F2EE3EB4744CB17 /* Pods_panaSiriUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_panaSiriUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B70A889EE7019D93D24B3B6 /* Pods-panaSiriChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiriChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat.debug.xcconfig"; sourceTree = "<group>"; };
+		CC81547ED7455B6D8DB0B7F7 /* Pods-panaSiriUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiriUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiriUI/Pods-panaSiriUI.release.xcconfig"; sourceTree = "<group>"; };
+		E1EA08B9AFA9BC61597619A8 /* Pods-panaSiriUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panaSiriUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-panaSiriUI/Pods-panaSiriUI.debug.xcconfig"; sourceTree = "<group>"; };
+		EFA0C4AD3DFB890B3506D0FD /* Pods_panaSiri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_panaSiri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F271E2A21F1E2FDD00E1F8A2 /* panaSiriChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = panaSiriChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F271E2A51F1E2FDD00E1F8A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F271E2AA1F1E2FDE00E1F8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F271E2AC1F1E2FDE00E1F8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F271E2AF1F1E2FDE00E1F8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F271E2B11F1E2FDE00E1F8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F271E2B71F1E300000E1F8A2 /* panaSiriChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = panaSiriChat.entitlements; sourceTree = "<group>"; };
+		F271E2BC1F1E310B00E1F8A2 /* panaSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = panaSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F271E2BE1F1E310B00E1F8A2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		F271E2C01F1E310B00E1F8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F271E2C51F1E310C00E1F8A2 /* panaSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = panaSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F271E2C71F1E310C00E1F8A2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		F271E2CA1F1E310C00E1F8A2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		F271E2CD1F1E310C00E1F8A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F271E2CF1F1E310C00E1F8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F271E2DD1F1E33AC00E1F8A2 /* panaSiriChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = panaSiriChatViewController.swift; sourceTree = "<group>"; };
+		F2F124D11F1FA59500E83C3F /* panaSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = panaSiri.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F271E29F1F1E2FDC00E1F8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C2784C9F990F7F1E78663F /* Pods_panaSiriChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2B91F1E310B00E1F8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA8760B131E3391F1F6B49D /* Pods_panaSiri.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2C21F1E310C00E1F8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2C81F1E310C00E1F8A2 /* IntentsUI.framework in Frameworks */,
+				571C671AC08D0CF4465BBD33 /* Pods_panaSiriUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09FE1B2F0C9868204411D751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FE3A80DE97DFDB893C09B78 /* Pods-panaSiri.debug.xcconfig */,
+				31278E0188388B1725881C6D /* Pods-panaSiri.release.xcconfig */,
+				6B70A889EE7019D93D24B3B6 /* Pods-panaSiriChat.debug.xcconfig */,
+				3F8A1E18E2850F07C636AD37 /* Pods-panaSiriChat.release.xcconfig */,
+				E1EA08B9AFA9BC61597619A8 /* Pods-panaSiriUI.debug.xcconfig */,
+				CC81547ED7455B6D8DB0B7F7 /* Pods-panaSiriUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F271E2991F1E2FDB00E1F8A2 = {
+			isa = PBXGroup;
+			children = (
+				F271E2A41F1E2FDD00E1F8A2 /* panaSiriChat */,
+				F271E2BD1F1E310B00E1F8A2 /* panaSiri */,
+				F271E2C91F1E310C00E1F8A2 /* panaSiriUI */,
+				F271E2C61F1E310C00E1F8A2 /* Frameworks */,
+				F271E2A31F1E2FDD00E1F8A2 /* Products */,
+				09FE1B2F0C9868204411D751 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F271E2A31F1E2FDD00E1F8A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F271E2A21F1E2FDD00E1F8A2 /* panaSiriChat.app */,
+				F271E2BC1F1E310B00E1F8A2 /* panaSiri.appex */,
+				F271E2C51F1E310C00E1F8A2 /* panaSiriUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F271E2A41F1E2FDD00E1F8A2 /* panaSiriChat */ = {
+			isa = PBXGroup;
+			children = (
+				F271E2B71F1E300000E1F8A2 /* panaSiriChat.entitlements */,
+				F271E2A51F1E2FDD00E1F8A2 /* AppDelegate.swift */,
+				F271E2DD1F1E33AC00E1F8A2 /* panaSiriChatViewController.swift */,
+				F271E2A91F1E2FDE00E1F8A2 /* Main.storyboard */,
+				F271E2AC1F1E2FDE00E1F8A2 /* Assets.xcassets */,
+				F271E2AE1F1E2FDE00E1F8A2 /* LaunchScreen.storyboard */,
+				F271E2B11F1E2FDE00E1F8A2 /* Info.plist */,
+			);
+			path = panaSiriChat;
+			sourceTree = "<group>";
+		};
+		F271E2BD1F1E310B00E1F8A2 /* panaSiri */ = {
+			isa = PBXGroup;
+			children = (
+				F2F124D11F1FA59500E83C3F /* panaSiri.entitlements */,
+				F271E2BE1F1E310B00E1F8A2 /* IntentHandler.swift */,
+				F271E2C01F1E310B00E1F8A2 /* Info.plist */,
+			);
+			path = panaSiri;
+			sourceTree = "<group>";
+		};
+		F271E2C61F1E310C00E1F8A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F271E2C71F1E310C00E1F8A2 /* IntentsUI.framework */,
+				EFA0C4AD3DFB890B3506D0FD /* Pods_panaSiri.framework */,
+				0C980A197462AE9B41A16C87 /* Pods_panaSiriChat.framework */,
+				61DED6AD6F2EE3EB4744CB17 /* Pods_panaSiriUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F271E2C91F1E310C00E1F8A2 /* panaSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				F271E2CA1F1E310C00E1F8A2 /* IntentViewController.swift */,
+				F271E2CC1F1E310C00E1F8A2 /* MainInterface.storyboard */,
+				F271E2CF1F1E310C00E1F8A2 /* Info.plist */,
+			);
+			path = panaSiriUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F271E2A11F1E2FDC00E1F8A2 /* panaSiriChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F271E2B41F1E2FDE00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiriChat" */;
+			buildPhases = (
+				4A0B88E628392683CF0853BD /* [CP] Check Pods Manifest.lock */,
+				F271E29E1F1E2FDC00E1F8A2 /* Sources */,
+				F271E29F1F1E2FDC00E1F8A2 /* Frameworks */,
+				F271E2A01F1E2FDC00E1F8A2 /* Resources */,
+				F271E2DC1F1E310C00E1F8A2 /* Embed App Extensions */,
+				3F412AADAF5FCFE13DF5EC2B /* [CP] Embed Pods Frameworks */,
+				ABD02634870BCE7DA2AC90B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F271E2D11F1E310C00E1F8A2 /* PBXTargetDependency */,
+				F271E2D41F1E310C00E1F8A2 /* PBXTargetDependency */,
+			);
+			name = panaSiriChat;
+			productName = panaSiriChat;
+			productReference = F271E2A21F1E2FDD00E1F8A2 /* panaSiriChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F271E2BB1F1E310B00E1F8A2 /* panaSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F271E2D91F1E310C00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiri" */;
+			buildPhases = (
+				E11967942A4B7610E07CBB55 /* [CP] Check Pods Manifest.lock */,
+				F271E2B81F1E310B00E1F8A2 /* Sources */,
+				F271E2B91F1E310B00E1F8A2 /* Frameworks */,
+				F271E2BA1F1E310B00E1F8A2 /* Resources */,
+				DB5EE8DB115718BAECE11A26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = panaSiri;
+			productName = panaSiri;
+			productReference = F271E2BC1F1E310B00E1F8A2 /* panaSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F271E2C41F1E310C00E1F8A2 /* panaSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F271E2D61F1E310C00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiriUI" */;
+			buildPhases = (
+				255C5FAFE867427D8BA51D19 /* [CP] Check Pods Manifest.lock */,
+				F271E2C11F1E310C00E1F8A2 /* Sources */,
+				F271E2C21F1E310C00E1F8A2 /* Frameworks */,
+				F271E2C31F1E310C00E1F8A2 /* Resources */,
+				CAF4D94A5C45967D5D0211EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = panaSiriUI;
+			productName = panaSiriUI;
+			productReference = F271E2C51F1E310C00E1F8A2 /* panaSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F271E29A1F1E2FDC00E1F8A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Syed Shahrukh Haider";
+				TargetAttributes = {
+					F271E2A11F1E2FDC00E1F8A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SUBZ24DP5B;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					F271E2BB1F1E310B00E1F8A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SUBZ24DP5B;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F271E2C41F1E310C00E1F8A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SUBZ24DP5B;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F271E29D1F1E2FDC00E1F8A2 /* Build configuration list for PBXProject "panaSiriChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F271E2991F1E2FDB00E1F8A2;
+			productRefGroup = F271E2A31F1E2FDD00E1F8A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F271E2A11F1E2FDC00E1F8A2 /* panaSiriChat */,
+				F271E2BB1F1E310B00E1F8A2 /* panaSiri */,
+				F271E2C41F1E310C00E1F8A2 /* panaSiriUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F271E2A01F1E2FDC00E1F8A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2B01F1E2FDE00E1F8A2 /* LaunchScreen.storyboard in Resources */,
+				F271E2AD1F1E2FDE00E1F8A2 /* Assets.xcassets in Resources */,
+				F271E2AB1F1E2FDE00E1F8A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2BA1F1E310B00E1F8A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2C31F1E310C00E1F8A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2CE1F1E310C00E1F8A2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		255C5FAFE867427D8BA51D19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F412AADAF5FCFE13DF5EC2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A0B88E628392683CF0853BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD02634870BCE7DA2AC90B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF4D94A5C45967D5D0211EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-panaSiriUI/Pods-panaSiriUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB5EE8DB115718BAECE11A26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-panaSiri/Pods-panaSiri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E11967942A4B7610E07CBB55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F271E29E1F1E2FDC00E1F8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2DE1F1E33AC00E1F8A2 /* panaSiriChatViewController.swift in Sources */,
+				F271E2A61F1E2FDD00E1F8A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2B81F1E310B00E1F8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2BF1F1E310B00E1F8A2 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F271E2C11F1E310C00E1F8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271E2CB1F1E310C00E1F8A2 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F271E2D11F1E310C00E1F8A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F271E2C41F1E310C00E1F8A2 /* panaSiriUI */;
+			targetProxy = F271E2D01F1E310C00E1F8A2 /* PBXContainerItemProxy */;
+		};
+		F271E2D41F1E310C00E1F8A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F271E2BB1F1E310B00E1F8A2 /* panaSiri */;
+			targetProxy = F271E2D31F1E310C00E1F8A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F271E2A91F1E2FDE00E1F8A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F271E2AA1F1E2FDE00E1F8A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F271E2AE1F1E2FDE00E1F8A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F271E2AF1F1E2FDE00E1F8A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F271E2CC1F1E310C00E1F8A2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F271E2CD1F1E310C00E1F8A2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F271E2B21F1E2FDE00E1F8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F271E2B31F1E2FDE00E1F8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F271E2B51F1E2FDE00E1F8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B70A889EE7019D93D24B3B6 /* Pods-panaSiriChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = panaSiriChat/panaSiriChat.entitlements;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiriChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiriChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F271E2B61F1E2FDE00E1F8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8A1E18E2850F07C636AD37 /* Pods-panaSiriChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = panaSiriChat/panaSiriChat.entitlements;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiriChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiriChat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F271E2D71F1E310C00E1F8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EA08B9AFA9BC61597619A8 /* Pods-panaSiriUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat.panaSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiriUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F271E2D81F1E310C00E1F8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC81547ED7455B6D8DB0B7F7 /* Pods-panaSiriUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat.panaSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiriUI-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F271E2DA1F1E310C00E1F8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE3A80DE97DFDB893C09B78 /* Pods-panaSiri.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = panaSiri/panaSiri.entitlements;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat.panaSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiri-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F271E2DB1F1E310C00E1F8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31278E0188388B1725881C6D /* Pods-panaSiri.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = panaSiri/panaSiri.entitlements;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = panaSiri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.perception.panaSiriChat.panaSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "panaSiri-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F271E29D1F1E2FDC00E1F8A2 /* Build configuration list for PBXProject "panaSiriChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F271E2B21F1E2FDE00E1F8A2 /* Debug */,
+				F271E2B31F1E2FDE00E1F8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F271E2B41F1E2FDE00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiriChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F271E2B51F1E2FDE00E1F8A2 /* Debug */,
+				F271E2B61F1E2FDE00E1F8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F271E2D61F1E310C00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F271E2D71F1E310C00E1F8A2 /* Debug */,
+				F271E2D81F1E310C00E1F8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F271E2D91F1E310C00E1F8A2 /* Build configuration list for PBXNativeTarget "panaSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F271E2DA1F1E310C00E1F8A2 /* Debug */,
+				F271E2DB1F1E310C00E1F8A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F271E29A1F1E2FDC00E1F8A2 /* Project object */;
+}

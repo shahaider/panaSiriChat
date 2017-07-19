@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D9483F89B3B9BBF65B8BC478902966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */; };
+		1A92802CE29487C200BE42BF357BFFBA /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDEAC876D0B1BDB152498787A324019 /* MMWormhole.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1D44AFD094BC87EDDAD6F520D71FCA3E /* Pods-panaSiriChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 233727FC821670268361A0D67250D625 /* Pods-panaSiriChat-dummy.m */; };
+		2718E9BF5CF48044E360F0E2306CA918 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 759839D60C2509CF8EB75D56E24E3BBE /* MMWormholeCoordinatedFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		40B83EC45177401060978B8287DF7184 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9468483ECC42830EAC8752E6D7E98D6 /* WatchConnectivity.framework */; };
+		41BEDA5EE20DAB103834E417D98EF302 /* MMWormholeCoordinatedFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3E113B9487FF6DDDFBB4B70680C1FD /* MMWormholeCoordinatedFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50AC460956BD7E31F9D655240B230A41 /* MMWormhole-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 795962A440D76B46600EA5ECE0A2463B /* MMWormhole-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56A4BB4B000E76DEC9B258FDD7C8F297 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 13883F962CE05C46E6429D9EAF445A33 /* MMWormholeSessionMessageTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		57045C28E15499C96707862FD6CCC429 /* MMWormholeSessionMessageTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC380906783478C2AA4FF925FF71B10 /* MMWormholeSessionMessageTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60AD5B8DC40C672E82860BBE6C419940 /* MMWormholeTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AC5E106D66AAB51C3E9BD52150AE58 /* MMWormholeTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60F8E42CB4DF22CD20522AC2CEE8DA49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */; };
+		6140008CA2CD291E6E0BA57A602C29E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */; };
+		63796B7C8FC452D6CE22FA6B1E294E03 /* MMWormholeSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A40C83297D95F3B8784634AD0CE7F66 /* MMWormholeSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A29BAAF5C632B5FBD3D230A264B28B /* Pods-panaSiriUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2BBBD03D17E1D88C921D2FEEB516207 /* Pods-panaSiriUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72EA900FF62B9CFAA81004B2F09856A2 /* MMWormholeSessionContextTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F52EAAC8463788B2E2505D2EEE19252 /* MMWormholeSessionContextTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		839282BAA133DF7EAB519B86C9538EC8 /* MMWormholeSessionFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = 2262E1AA8A3792A260F8E4EAD3BA8607 /* MMWormholeSessionFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F175C7A58845BDB0411A49B8E0430E0 /* Pods-panaSiriUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 698CF98F6A4BB4187ABF5FA622462E39 /* Pods-panaSiriUI-dummy.m */; };
+		90D1DA4584DB8FF8BEF49D3B024824AB /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = EE10FA39B9896EAD4AF3991D5C1A917E /* MMWormholeFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		96FA282EFD44B79B5DFE1CB32A8FF90C /* MMWormholeFileTransiting.h in Headers */ = {isa = PBXBuildFile; fileRef = FE87B3D76ADB3827383B6093FD4A70F9 /* MMWormholeFileTransiting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97A1939BBD5C334E0997734D0BB932D3 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = B08AA3939DA9F093788A6A163A48DE6C /* MMWormholeSessionContextTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9EC088E66AD01D0523DCB7F68183A3EC /* MMWormhole.h in Headers */ = {isa = PBXBuildFile; fileRef = D2419BB0D6A01EEB2C186248F905A662 /* MMWormhole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA05B2918C02B9F15E39798A7CFFDBBE /* MMWormhole-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8292672A6FAA3C00C19EEB378B1AA6CA /* MMWormhole-dummy.m */; };
+		B3ED830372EE647A8C034535EA79E96E /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B2CD8B7C0177CC6926A4358988E5AF /* MMWormholeSessionFileTransiting.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BC4EABA446F0A897E452EDE50929EFB9 /* Pods-panaSiri-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB05DDF95C5EE2E174FA292AB6B1815 /* Pods-panaSiri-dummy.m */; };
+		BFA296B3DB4BE90B416E74F0A6B71E48 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 604050B24DC5AD18A7A38CD23B91CBB4 /* MMWormholeSession.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C4A83FD2103CB25D939CB9D144198047 /* Pods-panaSiriChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DEE5D3598E2312E9411B889DBEBDF71 /* Pods-panaSiriChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8C5820E6D494E16F80F97E8E285879C /* Pods-panaSiri-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFA5828E758FB46400197F26C7D2398A /* Pods-panaSiri-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF729F61ABF268EFA260A86FC9F17C6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		340313A451B51727B45E3A11297364DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8B0A5762D4572F2D507F7315F54FFA;
+			remoteInfo = MMWormhole;
+		};
+		35B39969E30F23B9909D341CB0641E95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8B0A5762D4572F2D507F7315F54FFA;
+			remoteInfo = MMWormhole;
+		};
+		AE3688D00E4E3ABEA471B3C4CDD7C2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8B0A5762D4572F2D507F7315F54FFA;
+			remoteInfo = MMWormhole;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07ECE1379D64ACED63A1B788B3156AE2 /* Pods-panaSiri.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-panaSiri.modulemap"; sourceTree = "<group>"; };
+		13883F962CE05C46E6429D9EAF445A33 /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = Source/MMWormholeSessionMessageTransiting.m; sourceTree = "<group>"; };
+		14A871CF91538DE18808F4CB108C1304 /* Pods-panaSiriChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiriChat.release.xcconfig"; sourceTree = "<group>"; };
+		1DEE5D3598E2312E9411B889DBEBDF71 /* Pods-panaSiriChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-panaSiriChat-umbrella.h"; sourceTree = "<group>"; };
+		2262E1AA8A3792A260F8E4EAD3BA8607 /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = Source/MMWormholeSessionFileTransiting.h; sourceTree = "<group>"; };
+		233727FC821670268361A0D67250D625 /* Pods-panaSiriChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-panaSiriChat-dummy.m"; sourceTree = "<group>"; };
+		2693AF16D6293707337C6F03168BEC0D /* Pods-panaSiri-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-panaSiri-acknowledgements.markdown"; sourceTree = "<group>"; };
+		28E80BDAF1BEC322C2F5E51A98011A41 /* Pods-panaSiri-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panaSiri-resources.sh"; sourceTree = "<group>"; };
+		2B93665679F60DBC1B951CEF1D8673E3 /* Pods-panaSiriUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-panaSiriUI.modulemap"; sourceTree = "<group>"; };
+		2EEA34475074F7C948E1D786DD16FD72 /* Pods_panaSiriChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_panaSiriChat.framework; path = "Pods-panaSiriChat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30652377A0EEE911DA046696907C823B /* Pods-panaSiriUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiriUI.release.xcconfig"; sourceTree = "<group>"; };
+		405AB8CD4CF934B6A451897A2614BB0D /* MMWormhole.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MMWormhole.modulemap; sourceTree = "<group>"; };
+		42B2CD8B7C0177CC6926A4358988E5AF /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = Source/MMWormholeSessionFileTransiting.m; sourceTree = "<group>"; };
+		4DC380906783478C2AA4FF925FF71B10 /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = Source/MMWormholeSessionMessageTransiting.h; sourceTree = "<group>"; };
+		4FDEAC876D0B1BDB152498787A324019 /* MMWormhole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = Source/MMWormhole.m; sourceTree = "<group>"; };
+		5125C491B93555F836468833CE3F8503 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B6C4EC69DD430676365E405AA02975 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576CD7BD058F99CE100F09FB446C48E1 /* Pods-panaSiriChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-panaSiriChat.modulemap"; sourceTree = "<group>"; };
+		5C2B966302450E510C57B0986DCA7183 /* MMWormhole-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-prefix.pch"; sourceTree = "<group>"; };
+		5F912DADB8297B84F182AE3B145B431B /* Pods_panaSiriUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_panaSiriUI.framework; path = "Pods-panaSiriUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		604050B24DC5AD18A7A38CD23B91CBB4 /* MMWormholeSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = Source/MMWormholeSession.m; sourceTree = "<group>"; };
+		64AC5E106D66AAB51C3E9BD52150AE58 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = Source/MMWormholeTransiting.h; sourceTree = "<group>"; };
+		67E8DCE59BDD8A12E9F853D5E4799A6A /* Pods-panaSiriUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-panaSiriUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		698CF98F6A4BB4187ABF5FA622462E39 /* Pods-panaSiriUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-panaSiriUI-dummy.m"; sourceTree = "<group>"; };
+		6B87285B339C799F1C6488C1344C388B /* Pods-panaSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiri.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF43DC98C55F3F8AA62B5142AF01A41 /* MMWormhole.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMWormhole.xcconfig; sourceTree = "<group>"; };
+		6F52EAAC8463788B2E2505D2EEE19252 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = Source/MMWormholeSessionContextTransiting.h; sourceTree = "<group>"; };
+		759839D60C2509CF8EB75D56E24E3BBE /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = Source/MMWormholeCoordinatedFileTransiting.m; sourceTree = "<group>"; };
+		795962A440D76B46600EA5ECE0A2463B /* MMWormhole-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMWormhole-umbrella.h"; sourceTree = "<group>"; };
+		8292672A6FAA3C00C19EEB378B1AA6CA /* MMWormhole-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMWormhole-dummy.m"; sourceTree = "<group>"; };
+		8A36E6D2C73BAB3AF45BEEE6E26E8D7B /* Pods-panaSiriChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-panaSiriChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9663EFA2E461B386A66BBC20A4112DC5 /* Pods-panaSiriChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panaSiriChat-frameworks.sh"; sourceTree = "<group>"; };
+		9A40C83297D95F3B8784634AD0CE7F66 /* MMWormholeSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = Source/MMWormholeSession.h; sourceTree = "<group>"; };
+		9C3E113B9487FF6DDDFBB4B70680C1FD /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = Source/MMWormholeCoordinatedFileTransiting.h; sourceTree = "<group>"; };
+		9CD0D598B2A4DB6F6ECCF4E047418C3B /* MMWormhole.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMWormhole.framework; path = MMWormhole.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA5828E758FB46400197F26C7D2398A /* Pods-panaSiri-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-panaSiri-umbrella.h"; sourceTree = "<group>"; };
+		B07A4656711D9200C2694F872E7F5A1B /* Pods-panaSiriChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-panaSiriChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B08AA3939DA9F093788A6A163A48DE6C /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = Source/MMWormholeSessionContextTransiting.m; sourceTree = "<group>"; };
+		BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF918D67C82B9FED7422C8A31428EA85 /* Pods-panaSiriChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiriChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D2419BB0D6A01EEB2C186248F905A662 /* MMWormhole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = Source/MMWormhole.h; sourceTree = "<group>"; };
+		D2BBBD03D17E1D88C921D2FEEB516207 /* Pods-panaSiriUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-panaSiriUI-umbrella.h"; sourceTree = "<group>"; };
+		D6A85B3D4A0EDDC6C3234D80383EFA55 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9468483ECC42830EAC8752E6D7E98D6 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		DCBA7B45EEBEDDA1B9E471E0F64ED8F5 /* Pods-panaSiriUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiriUI.debug.xcconfig"; sourceTree = "<group>"; };
+		DE7806E4025EA7464F6AF52A2978CF7C /* Pods-panaSiriChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panaSiriChat-resources.sh"; sourceTree = "<group>"; };
+		E495DAA1461B1B8036FB87D2447D4344 /* Pods_panaSiri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_panaSiri.framework; path = "Pods-panaSiri.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87C15DC521B2BD31F514552DCFCDDDE /* Pods-panaSiri-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-panaSiri-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB42A26B14C7719F913C3EB51941ACD9 /* Pods-panaSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panaSiri.release.xcconfig"; sourceTree = "<group>"; };
+		EE10FA39B9896EAD4AF3991D5C1A917E /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = Source/MMWormholeFileTransiting.m; sourceTree = "<group>"; };
+		EF25C906E3749925A7A4677237226DA0 /* Pods-panaSiriUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panaSiriUI-resources.sh"; sourceTree = "<group>"; };
+		F26080402BDF4F608BAD26EC3EB348F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F609426F883955AFF0E4E7BD20C0172E /* Pods-panaSiriUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-panaSiriUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCB05DDF95C5EE2E174FA292AB6B1815 /* Pods-panaSiri-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-panaSiri-dummy.m"; sourceTree = "<group>"; };
+		FE87B3D76ADB3827383B6093FD4A70F9 /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = Source/MMWormholeFileTransiting.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047A11AE35FE06D87CD0851052FCE164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F8E42CB4DF22CD20522AC2CEE8DA49 /* Foundation.framework in Frameworks */,
+				40B83EC45177401060978B8287DF7184 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6755A0A3FA88DC478D76E7ABF3D26C27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6140008CA2CD291E6E0BA57A602C29E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B2DECA131B91A5A7E0904A9A99D69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D9483F89B3B9BBF65B8BC478902966 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB5BB134BA96E0C93E343029500851FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF729F61ABF268EFA260A86FC9F17C6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0721CFFEAA10723C2F604C58ABECCEC3 /* Pods-panaSiri */ = {
+			isa = PBXGroup;
+			children = (
+				5125C491B93555F836468833CE3F8503 /* Info.plist */,
+				07ECE1379D64ACED63A1B788B3156AE2 /* Pods-panaSiri.modulemap */,
+				2693AF16D6293707337C6F03168BEC0D /* Pods-panaSiri-acknowledgements.markdown */,
+				E87C15DC521B2BD31F514552DCFCDDDE /* Pods-panaSiri-acknowledgements.plist */,
+				FCB05DDF95C5EE2E174FA292AB6B1815 /* Pods-panaSiri-dummy.m */,
+				28E80BDAF1BEC322C2F5E51A98011A41 /* Pods-panaSiri-resources.sh */,
+				AFA5828E758FB46400197F26C7D2398A /* Pods-panaSiri-umbrella.h */,
+				6B87285B339C799F1C6488C1344C388B /* Pods-panaSiri.debug.xcconfig */,
+				EB42A26B14C7719F913C3EB51941ACD9 /* Pods-panaSiri.release.xcconfig */,
+			);
+			name = "Pods-panaSiri";
+			path = "Target Support Files/Pods-panaSiri";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				618D0DCB23C7C26DA862BF5BA8F3F667 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581553259E4F3648D128CDB4223077F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD0D598B2A4DB6F6ECCF4E047418C3B /* MMWormhole.framework */,
+				E495DAA1461B1B8036FB87D2447D4344 /* Pods_panaSiri.framework */,
+				2EEA34475074F7C948E1D786DD16FD72 /* Pods_panaSiriChat.framework */,
+				5F912DADB8297B84F182AE3B145B431B /* Pods_panaSiriUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618D0DCB23C7C26DA862BF5BA8F3F667 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD2156C1D1F2BE16C1895E03D889958E /* Foundation.framework */,
+				D9468483ECC42830EAC8752E6D7E98D6 /* WatchConnectivity.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65C3DAC5CCF76B9376EEC93BDF5ED02D /* Pods-panaSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				F26080402BDF4F608BAD26EC3EB348F5 /* Info.plist */,
+				2B93665679F60DBC1B951CEF1D8673E3 /* Pods-panaSiriUI.modulemap */,
+				67E8DCE59BDD8A12E9F853D5E4799A6A /* Pods-panaSiriUI-acknowledgements.markdown */,
+				F609426F883955AFF0E4E7BD20C0172E /* Pods-panaSiriUI-acknowledgements.plist */,
+				698CF98F6A4BB4187ABF5FA622462E39 /* Pods-panaSiriUI-dummy.m */,
+				EF25C906E3749925A7A4677237226DA0 /* Pods-panaSiriUI-resources.sh */,
+				D2BBBD03D17E1D88C921D2FEEB516207 /* Pods-panaSiriUI-umbrella.h */,
+				DCBA7B45EEBEDDA1B9E471E0F64ED8F5 /* Pods-panaSiriUI.debug.xcconfig */,
+				30652377A0EEE911DA046696907C823B /* Pods-panaSiriUI.release.xcconfig */,
+			);
+			name = "Pods-panaSiriUI";
+			path = "Target Support Files/Pods-panaSiriUI";
+			sourceTree = "<group>";
+		};
+		7D9DD3E5874A7C93E92D4E73B077C627 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0721CFFEAA10723C2F604C58ABECCEC3 /* Pods-panaSiri */,
+				E8C90BECD9CDE52349A0682013C3DE87 /* Pods-panaSiriChat */,
+				65C3DAC5CCF76B9376EEC93BDF5ED02D /* Pods-panaSiriUI */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				B8244A10CA18AE6174242567AE3F9021 /* Pods */,
+				581553259E4F3648D128CDB4223077F8 /* Products */,
+				7D9DD3E5874A7C93E92D4E73B077C627 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD49838B35F9AFA7194522324C0EA67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56B6C4EC69DD430676365E405AA02975 /* Info.plist */,
+				405AB8CD4CF934B6A451897A2614BB0D /* MMWormhole.modulemap */,
+				6CF43DC98C55F3F8AA62B5142AF01A41 /* MMWormhole.xcconfig */,
+				8292672A6FAA3C00C19EEB378B1AA6CA /* MMWormhole-dummy.m */,
+				5C2B966302450E510C57B0986DCA7183 /* MMWormhole-prefix.pch */,
+				795962A440D76B46600EA5ECE0A2463B /* MMWormhole-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMWormhole";
+			sourceTree = "<group>";
+		};
+		8F8EC328A64DCB4A795EDF6E8A389FEE /* MMWormhole */ = {
+			isa = PBXGroup;
+			children = (
+				D17C3B0D4CC9319BA461B2A431B2AF51 /* Core */,
+				7FD49838B35F9AFA7194522324C0EA67 /* Support Files */,
+			);
+			name = MMWormhole;
+			path = MMWormhole;
+			sourceTree = "<group>";
+		};
+		B8244A10CA18AE6174242567AE3F9021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F8EC328A64DCB4A795EDF6E8A389FEE /* MMWormhole */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D17C3B0D4CC9319BA461B2A431B2AF51 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D2419BB0D6A01EEB2C186248F905A662 /* MMWormhole.h */,
+				4FDEAC876D0B1BDB152498787A324019 /* MMWormhole.m */,
+				9C3E113B9487FF6DDDFBB4B70680C1FD /* MMWormholeCoordinatedFileTransiting.h */,
+				759839D60C2509CF8EB75D56E24E3BBE /* MMWormholeCoordinatedFileTransiting.m */,
+				FE87B3D76ADB3827383B6093FD4A70F9 /* MMWormholeFileTransiting.h */,
+				EE10FA39B9896EAD4AF3991D5C1A917E /* MMWormholeFileTransiting.m */,
+				9A40C83297D95F3B8784634AD0CE7F66 /* MMWormholeSession.h */,
+				604050B24DC5AD18A7A38CD23B91CBB4 /* MMWormholeSession.m */,
+				6F52EAAC8463788B2E2505D2EEE19252 /* MMWormholeSessionContextTransiting.h */,
+				B08AA3939DA9F093788A6A163A48DE6C /* MMWormholeSessionContextTransiting.m */,
+				2262E1AA8A3792A260F8E4EAD3BA8607 /* MMWormholeSessionFileTransiting.h */,
+				42B2CD8B7C0177CC6926A4358988E5AF /* MMWormholeSessionFileTransiting.m */,
+				4DC380906783478C2AA4FF925FF71B10 /* MMWormholeSessionMessageTransiting.h */,
+				13883F962CE05C46E6429D9EAF445A33 /* MMWormholeSessionMessageTransiting.m */,
+				64AC5E106D66AAB51C3E9BD52150AE58 /* MMWormholeTransiting.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E8C90BECD9CDE52349A0682013C3DE87 /* Pods-panaSiriChat */ = {
+			isa = PBXGroup;
+			children = (
+				D6A85B3D4A0EDDC6C3234D80383EFA55 /* Info.plist */,
+				576CD7BD058F99CE100F09FB446C48E1 /* Pods-panaSiriChat.modulemap */,
+				B07A4656711D9200C2694F872E7F5A1B /* Pods-panaSiriChat-acknowledgements.markdown */,
+				8A36E6D2C73BAB3AF45BEEE6E26E8D7B /* Pods-panaSiriChat-acknowledgements.plist */,
+				233727FC821670268361A0D67250D625 /* Pods-panaSiriChat-dummy.m */,
+				9663EFA2E461B386A66BBC20A4112DC5 /* Pods-panaSiriChat-frameworks.sh */,
+				DE7806E4025EA7464F6AF52A2978CF7C /* Pods-panaSiriChat-resources.sh */,
+				1DEE5D3598E2312E9411B889DBEBDF71 /* Pods-panaSiriChat-umbrella.h */,
+				BF918D67C82B9FED7422C8A31428EA85 /* Pods-panaSiriChat.debug.xcconfig */,
+				14A871CF91538DE18808F4CB108C1304 /* Pods-panaSiriChat.release.xcconfig */,
+			);
+			name = "Pods-panaSiriChat";
+			path = "Target Support Files/Pods-panaSiriChat";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48BB80A9E0DA199BC9CB2D208FA04552 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50AC460956BD7E31F9D655240B230A41 /* MMWormhole-umbrella.h in Headers */,
+				9EC088E66AD01D0523DCB7F68183A3EC /* MMWormhole.h in Headers */,
+				41BEDA5EE20DAB103834E417D98EF302 /* MMWormholeCoordinatedFileTransiting.h in Headers */,
+				96FA282EFD44B79B5DFE1CB32A8FF90C /* MMWormholeFileTransiting.h in Headers */,
+				63796B7C8FC452D6CE22FA6B1E294E03 /* MMWormholeSession.h in Headers */,
+				72EA900FF62B9CFAA81004B2F09856A2 /* MMWormholeSessionContextTransiting.h in Headers */,
+				839282BAA133DF7EAB519B86C9538EC8 /* MMWormholeSessionFileTransiting.h in Headers */,
+				57045C28E15499C96707862FD6CCC429 /* MMWormholeSessionMessageTransiting.h in Headers */,
+				60AD5B8DC40C672E82860BBE6C419940 /* MMWormholeTransiting.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CE9CC9BC9EB2984F63EA1424F348BD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A29BAAF5C632B5FBD3D230A264B28B /* Pods-panaSiriUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A29B7306A3B9F15CC30A5258648EFC9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5820E6D494E16F80F97E8E285879C /* Pods-panaSiri-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA781793F64FA72492D59524DE48740B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A83FD2103CB25D939CB9D144198047 /* Pods-panaSiriChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C8B0A5762D4572F2D507F7315F54FFA /* MMWormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F8E2C3A06916EC368E358A033534A0 /* Build configuration list for PBXNativeTarget "MMWormhole" */;
+			buildPhases = (
+				D15608DE2253CDCF3E1F069124F2F278 /* Sources */,
+				047A11AE35FE06D87CD0851052FCE164 /* Frameworks */,
+				48BB80A9E0DA199BC9CB2D208FA04552 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMWormhole;
+			productName = MMWormhole;
+			productReference = 9CD0D598B2A4DB6F6ECCF4E047418C3B /* MMWormhole.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8849911524AB3D975A92A32B3563AC2C /* Pods-panaSiriChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462F9CD8AB23C5C9DA31AF9A4FA06F96 /* Build configuration list for PBXNativeTarget "Pods-panaSiriChat" */;
+			buildPhases = (
+				29C049ACD01CA3DDD910E25CF4299CF5 /* Sources */,
+				AB5BB134BA96E0C93E343029500851FD /* Frameworks */,
+				BA781793F64FA72492D59524DE48740B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				205811BE33D144E88AFF6B25A1ACE3D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-panaSiriChat";
+			productName = "Pods-panaSiriChat";
+			productReference = 2EEA34475074F7C948E1D786DD16FD72 /* Pods_panaSiriChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		955D06B9AB20974D97107150D853602A /* Pods-panaSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50ECE8B91F5CED823728667A41F51AA /* Build configuration list for PBXNativeTarget "Pods-panaSiriUI" */;
+			buildPhases = (
+				EE41EED879C0ADC14E168F093C7C55DE /* Sources */,
+				6755A0A3FA88DC478D76E7ABF3D26C27 /* Frameworks */,
+				6CE9CC9BC9EB2984F63EA1424F348BD9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9526DE35FE197EBA1927E24B7450E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-panaSiriUI";
+			productName = "Pods-panaSiriUI";
+			productReference = 5F912DADB8297B84F182AE3B145B431B /* Pods_panaSiriUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCD84E8681B20E5F3D493FB595A12633 /* Pods-panaSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A6754A1E123ED5C54B10DF7FEB7A98E /* Build configuration list for PBXNativeTarget "Pods-panaSiri" */;
+			buildPhases = (
+				374EB3F7A8DF8C0F72BA1264D0A68496 /* Sources */,
+				67B2DECA131B91A5A7E0904A9A99D69D /* Frameworks */,
+				A29B7306A3B9F15CC30A5258648EFC9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				291AE98D1F4D963293A97FEC22EFE235 /* PBXTargetDependency */,
+			);
+			name = "Pods-panaSiri";
+			productName = "Pods-panaSiri";
+			productReference = E495DAA1461B1B8036FB87D2447D4344 /* Pods_panaSiri.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 581553259E4F3648D128CDB4223077F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C8B0A5762D4572F2D507F7315F54FFA /* MMWormhole */,
+				BCD84E8681B20E5F3D493FB595A12633 /* Pods-panaSiri */,
+				8849911524AB3D975A92A32B3563AC2C /* Pods-panaSiriChat */,
+				955D06B9AB20974D97107150D853602A /* Pods-panaSiriUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C049ACD01CA3DDD910E25CF4299CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D44AFD094BC87EDDAD6F520D71FCA3E /* Pods-panaSiriChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		374EB3F7A8DF8C0F72BA1264D0A68496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC4EABA446F0A897E452EDE50929EFB9 /* Pods-panaSiri-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15608DE2253CDCF3E1F069124F2F278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA05B2918C02B9F15E39798A7CFFDBBE /* MMWormhole-dummy.m in Sources */,
+				1A92802CE29487C200BE42BF357BFFBA /* MMWormhole.m in Sources */,
+				2718E9BF5CF48044E360F0E2306CA918 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				90D1DA4584DB8FF8BEF49D3B024824AB /* MMWormholeFileTransiting.m in Sources */,
+				BFA296B3DB4BE90B416E74F0A6B71E48 /* MMWormholeSession.m in Sources */,
+				97A1939BBD5C334E0997734D0BB932D3 /* MMWormholeSessionContextTransiting.m in Sources */,
+				B3ED830372EE647A8C034535EA79E96E /* MMWormholeSessionFileTransiting.m in Sources */,
+				56A4BB4B000E76DEC9B258FDD7C8F297 /* MMWormholeSessionMessageTransiting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE41EED879C0ADC14E168F093C7C55DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F175C7A58845BDB0411A49B8E0430E0 /* Pods-panaSiriUI-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		205811BE33D144E88AFF6B25A1ACE3D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = 5C8B0A5762D4572F2D507F7315F54FFA /* MMWormhole */;
+			targetProxy = 35B39969E30F23B9909D341CB0641E95 /* PBXContainerItemProxy */;
+		};
+		291AE98D1F4D963293A97FEC22EFE235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = 5C8B0A5762D4572F2D507F7315F54FFA /* MMWormhole */;
+			targetProxy = 340313A451B51727B45E3A11297364DC /* PBXContainerItemProxy */;
+		};
+		EF9526DE35FE197EBA1927E24B7450E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMWormhole;
+			target = 5C8B0A5762D4572F2D507F7315F54FFA /* MMWormhole */;
+			targetProxy = AE3688D00E4E3ABEA471B3C4CDD7C2E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1049E6F66A56575B56C88D4FCB66FB51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBA7B45EEBEDDA1B9E471E0F64ED8F5 /* Pods-panaSiriUI.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiriUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiriUI/Pods-panaSiriUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiriUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5ED134AA0146D1CB5FFB3612783BA96F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A871CF91538DE18808F4CB108C1304 /* Pods-panaSiriChat.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiriChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiriChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80816927DA33F38C095D3CB06DEC6F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB42A26B14C7719F913C3EB51941ACD9 /* Pods-panaSiri.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiri/Pods-panaSiri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9A45E072C91CFA0772703022AB498453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF43DC98C55F3F8AA62B5142AF01A41 /* MMWormhole.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0896F152855929865F7DDB472E31CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B87285B339C799F1C6488C1344C388B /* Pods-panaSiri.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiri/Pods-panaSiri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9C199E7537F3EC7B13D7EF2E4162DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF43DC98C55F3F8AA62B5142AF01A41 /* MMWormhole.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMWormhole/MMWormhole-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMWormhole/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMWormhole/MMWormhole.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMWormhole;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB6341B6215B5EED2FC63AAE4F5403D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30652377A0EEE911DA046696907C823B /* Pods-panaSiriUI.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiriUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiriUI/Pods-panaSiriUI.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiriUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F105CE8BBD9D195464E4D63AC400B5A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF918D67C82B9FED7422C8A31428EA85 /* Pods-panaSiriChat.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-panaSiriChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-panaSiriChat/Pods-panaSiriChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_panaSiriChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		462F9CD8AB23C5C9DA31AF9A4FA06F96 /* Build configuration list for PBXNativeTarget "Pods-panaSiriChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F105CE8BBD9D195464E4D63AC400B5A3 /* Debug */,
+				5ED134AA0146D1CB5FFB3612783BA96F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A6754A1E123ED5C54B10DF7FEB7A98E /* Build configuration list for PBXNativeTarget "Pods-panaSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0896F152855929865F7DDB472E31CA1 /* Debug */,
+				80816927DA33F38C095D3CB06DEC6F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50ECE8B91F5CED823728667A41F51AA /* Build configuration list for PBXNativeTarget "Pods-panaSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1049E6F66A56575B56C88D4FCB66FB51 /* Debug */,
+				EB6341B6215B5EED2FC63AAE4F5403D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F8E2C3A06916EC368E358A033534A0 /* Build configuration list for PBXNativeTarget "MMWormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C199E7537F3EC7B13D7EF2E4162DE5 /* Debug */,
+				9A45E072C91CFA0772703022AB498453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
